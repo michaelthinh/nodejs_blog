@@ -9,7 +9,7 @@ app.use(morgan("combined"));
 
 // function(req,res){res.send("Hello World!")};
 
-app.get("/tin-tuc", (req, res) => {
+app.get("/main", (req, res) => {
   var a = 1;
   var b = 2;
   var c = a + b;
