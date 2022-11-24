@@ -1,0 +1,11 @@
+@import 'variables';
+
+h1{
+    color:yellow;
+    background-color: $random-color;
+}
+
+h2{
+    color:red;
+    background-color:yellow;
+}
