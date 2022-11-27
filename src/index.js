@@ -33,7 +33,7 @@ app.engine(
   })
 );
 app.set("view engine", "hbs");
-app.set("views", path.join(__dirname, "resources/views"));
+app.set("views", path.join(__dirname, "resources", "views"));
 
 // function(req,res){res.send("Hello World!")};
 
@@ -43,5 +43,5 @@ route(app);
 // 127.0.0.1 : localhost
 
 app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`);
+  console.log(`App listening at http://localhost:${port}`);
 });
