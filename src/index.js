@@ -3,10 +3,13 @@ const express = require("express");
 const morgan = require("morgan");
 const hbs = require("express-handlebars");
 const app = express();
-const port = 3000;
+const port = 3010;
 
 const route = require("./routes");
+const db = require("./config/db");
 
+// Connect to database
+db.connect();
 // Đọc ảnh
 app.use(express.static(path.join(__dirname, "public")));
 
