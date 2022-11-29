@@ -2,10 +2,15 @@ const mongoose = require("mongoose");
 
 async function connect() {
   try {
-    await mongoose.connect("mongodb://localhost:27017/f8_education_dev");
-    console.log("connect thanh cong");
+    await mongoose.connect("mongodb://localhost:27017/f8_education_dev"),
+      {
+        useNewUrlParser: true,
+        useUnifedTopology: true,
+        useCreateIndex: true,
+      };
+    console.log("Connect successfully");
   } catch (error) {
-    console.log("connect that bai");
+    console.log("Connect failed");
   }
 }
 
