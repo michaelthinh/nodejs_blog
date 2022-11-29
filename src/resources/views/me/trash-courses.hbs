@@ -9,7 +9,7 @@
                 <th scope="col">Number</th>
                 <th scope="col">Course Name</th>
                 <th scope="col">Level</th>
-                <th scope="col">Date Created</th>
+                <th scope="col">Date Deleted</th>
                 <th scope="col"></th>
             </tr>
         </thead>
@@ -19,7 +19,7 @@
                 <th scope="row">{{sum @index 1}}</th>
                 <td>{{this.name}}</td>
                 <td>{{this.level}}</td>
-                <td>{{this.createdAt}}</td>
+                <td>{{this.deletedAt}}</td>
                 <td>
                     <a href="" class="btn btn-primary btn-restore" data-id="{{this._id}}">Restore</a>
                     <a href="" class="btn btn-danger" data-id="{{this._id}}" data-bs-toggle="modal"
