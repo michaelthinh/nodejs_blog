@@ -8,9 +8,9 @@ async function connect() {
         useUnifedTopology: true,
         useCreateIndex: true,
       };
-    console.log("Connect successfully");
+    console.log("Connect DB successfully");
   } catch (error) {
-    console.log("Connect failed");
+    console.log("Connect DB failed");
   }
 }
 

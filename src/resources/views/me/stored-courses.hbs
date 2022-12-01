@@ -17,14 +17,22 @@
 
         </div>
     </div>
+
     <table class="table mt-4">
         <thead>
             <tr>
                 <th scope="col"></th>
                 <th scope="col">Number</th>
-                <th scope="col">Course Name</th>
-                <th scope="col">Level</th>
-                <th scope="col">Date Created</th>
+                <th scope="col">
+                    Course Name
+                    {{{sortable "name" _sort}}}
+                </th>
+                <th scope="col">Level
+                    {{{sortable "level" _sort}}}
+                </th>
+                <th scope="col">Date Created
+                    {{{sortable "createdAt" _sort}}}
+                </th>
                 <th scope="col"></th>
             </tr>
         </thead>
